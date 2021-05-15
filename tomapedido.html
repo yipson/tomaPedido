@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toma Pedido</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body class="fondo-azul">
+
+  <div class="contenedor">
+    <div class="contenedor__datos-informacion">
+      <div class="datos-cliente">
+
+        <div class="dato-cliente">
+          <label for="">Documento:</label>
+          <input type="text" readonly="readonly" value="Nombre cliente">
+        </div>
+
+        <div class="dato-cliente">
+          <label for="">Nombre:</label>
+          <input type="text" readonly="readonly" value="Nombre cliente">
+        </div>
+
+        <div class="dato-cliente">
+          <label for="">Direccion:</label>
+          <input type="text" readonly="readonly" value="Nombre cliente">
+        </div>
+
+        <div class="dato-cliente">
+          <label for="">Telefono:</label>
+          <input type="text" readonly="readonly" value="Nombre cliente">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="contenedor-table">
+
+      <div class="table-top">
+        <div class="search">
+          <div class="search-flex">
+            <input type="text" value="Name..." disable>
+            <img src="build/img/search.svg" alt="Search icon">
+          </div>
+        </div>
+
+        
+        <input class="view-selected" type="submit" value="View Selected">
+        
+      </div>
+
+      
+      <table class="table">
+        <tr class="table-header">
+          <th>Article</th>
+          <th>Price</th>
+          <th class="th-quant">Quant.</th>
+          <th class="th-total">Total</th>
+          <th>Add</th>
+        </tr>
+        <tr>
+          <td>Mantel Babyshower Azul</td>
+          <td>$ 4000</td>
+          <td > <input class="quant" type="number" min="0" step="1"> </td>
+          <td > <input class="total" type="number" readonly="readonly"> </td>
+          <td><input class="boton-add" type="submit" value="Add"></td>
+        </tr>
+        <tr>
+          <td>Vaso Animales del Bosque</td>
+          <td>$ 2500</td>
+          <td > <input class="quant" type="number" min="0" step="1"> </td>
+          <td> <input class="total" type="number" readonly="readonly"> </td></td>
+          <td><input class="boton-add" type="submit" value="Add"></td>
+        </tr>
+        <tr>
+          <td>Plato redondo Fc</td>
+          <td>$ 3800</td>
+          <td > <input class="quant" type="number" min="0" step="1"> </td>
+          <td> <input class="total" type="number" readonly="readonly"> </td></td>
+          <td><input class="boton-add" type="submit" value="Add"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="contenedor__datos-informacion inferior">
+      <input class="boton-table boton-azul" type="submit" value="Guardar">
+      <input class="boton-table boton-fucsia" type="submit" value="Finalizar">
+
+      <a href="#">View Order</a>
+      <input type="number" class="total" readonly="readonly">
+    </div>
+  </div>
+
+    
+</body>
+</html>
