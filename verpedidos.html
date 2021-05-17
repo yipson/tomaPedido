@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View orders</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body class="fondo-azul">
+
+  <div class="contenedor cont-listado">
+
+    <div class="contenedor-table">
+
+      <div class="table-top">
+        <div class="search">
+          <div class="search-flex">
+            <input type="text" value="Name client..." disable>
+            <img src="build/img/search.svg" alt="Search icon">
+          </div>
+        </div>
+      </div>
+
+      
+      <table class="table">
+        <tr class="table-header">
+          <th class="tit-cliente">Date ini</th>
+          <th class="tit-cliente">Date end</th>
+          <th class="tit-cliente" >Client</th>
+          <th class="tit-cliente" >Total</th>
+          <th class="tit-cliente" > <select class="select-status" name="" id="">
+              <option value="Status" disabled selected >Status</option>
+              <option value="No Finished">No Finished</option>
+              <option value="Enlistment">Enlistment</option>
+              <option value="Finished">Finished</option>
+              <option value="All">All</option>
+          </select> </th>
+
+        </tr>
+        <tr>
+          <td> <p class="date">12/02/2021</p> </td>
+          <td> - </td>
+          <td> Tienda central </td>
+          <td> $ 500.000 </td>
+          <td> <p class="status no-finished">no finished</p> </td>
+          <td> 
+            <a href="#">
+              <img src="build/img/view.svg" alt="icon edit">
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+            <td> <p class="date">12/02/2021</p> </td>
+            <td> 15/02/2021 </td>
+            <td> Tienda central </td>
+            <td> $ 500.000 </td>
+            <td> <p class="status finished">finished</p> </td>
+            <td> 
+              <a href="">
+                <img src="build/img/view.svg" alt="icon edit">
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td> <p class="date">03/01/2021</p> </td>
+            <td> - </td>
+            <td> Comercializadora sas </td>
+            <td> $ 500.000 </td>
+            <td> <p class="status enlistment">enlistment</p> </td>
+            <td> 
+              <a href="#">
+                <img src="build/img/view.svg" alt="icon edit">
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td> <p class="date">12/02/2021</p> </td>
+            <td> 16/-2/2021 </td>
+            <td> Tienda central </td>
+            <td> $ 500.000 </td>
+            <td> <p class="status finished">finished</p> </td>
+            <td> 
+              <a href="#">
+                <img src="build/img/view.svg" alt="icon edit">
+              </a>
+            </td>
+          </tr>
+
+      </table>
+    </div>
+
+  </div>
+
+    
+</body>
+</html>
