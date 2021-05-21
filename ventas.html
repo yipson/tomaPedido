@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venats</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body class="fondo-azul">
+
+  <header class="header">
+    <div class="contenido-header">
+      <nav class="navegacion">
+        <a href="../">
+          <div class="bg-img">
+            <img   src="build/img/volver.svg" alt="">
+              
+          </div>
+        </a>
+        <a class="navegadores" href="menu.html">Menu</a>
+      </nav>
+      <div class="logout">
+        <a href=""><p>Logout</p></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="contenedor cont-listado">
+
+    <div class="contenedor-table">
+
+        <div class="table-top">
+            <div class="tipo-filtro">
+                <label for=""> <p>Filter Type</p> </label>
+                <select>
+                    <option value="" disabled selected>--Select--</option>
+                    <option value="Date">Date</option>
+                    <option value="Seller">Seller</option>
+                    <option value="Client">Client</option>
+                </select>
+            </div>
+            <div class="tipo-filtro">
+                <div class="data-range">
+                    <label for=""> <p>Date</p> </label>
+                    <input type="date">
+                    <input type="date">
+                </div>
+            </div>
+        </div>
+
+
+
+      
+      <table class="table">
+        <tr class="table-header">
+          <th class="tit-cliente number">fecha</th>
+          <th class="tit-cliente ">Cliente / Vendedor</th>
+          <th class="tit-cliente name" >Total</th>
+          <th class="icono"></th>
+          <th class="icono"></th>
+        </tr>
+        <tr>
+            <td> <input class="number" type="text" min="1" value="20/10/2021"> </td>
+            <td> <input class="number" type="text" min="1" value="Distribuidora.sas"> </td>
+            <td> <input class="name" type="text" value="$ 10.000"> </td>
+            <td> 
+              <a href="#">
+                <img src="build/img/edit.svg" alt="icon edit">
+              </a>
+            </td>
+            <td> 
+              <a href="#">
+                <img src="build/img/delete.svg" alt="icon edit">
+              </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td> <input class="number" type="text" min="1" value="20/10/2021"> </td>
+            <td> <input class="number" type="text" min="1" value="Distribuidora.sas"> </td>
+            <td> <input class="name" type="text" value="$ 10.000"> </td>
+            <td> 
+              <a href="#">
+                <img src="build/img/edit.svg" alt="icon edit">
+              </a>
+            </td>
+            <td> 
+              <a href="#">
+                <img src="build/img/delete.svg" alt="icon edit">
+              </a>
+            </td>
+        </tr>
+        <tr>
+            <td> <input class="number" type="text" min="1" value="20/10/2021"> </td>
+            <td> <input class="number" type="text" min="1" value="Distribuidora.sas"> </td>
+            <td> <input class="name" type="text" value="$ 10.000"> </td>
+            <td> 
+              <a href="#">
+                <img src="build/img/edit.svg" alt="icon edit">
+              </a>
+            </td>
+            <td> 
+              <a href="#">
+                <img src="build/img/delete.svg" alt="icon edit">
+              </a>
+            </td>
+        </tr>
+        <tr>
+            <td> <input class="number" type="text" min="1" value="20/10/2021"> </td>
+            <td> <input class="number" type="text" min="1" value="Distribuidora.sas"> </td>
+            <td> <input class="name" type="text" value="$ 10.000"> </td>
+            <td> 
+              <a href="#">
+                <img src="build/img/edit.svg" alt="icon edit">
+              </a>
+            </td>
+            <td> 
+              <a href="#">
+                <img src="build/img/delete.svg" alt="icon edit">
+              </a>
+            </td>
+        </tr>
+
+
+      </table>
+
+    </div>
+
+    <div class="contenedor__datos-informacion">
+        <div class="div-total inferior-ventas">
+          <h4>Total:</h4>
+          <input type="number" class="total" readonly="readonly">
+        </div>
+      </div>
+
+  </div>
+
+  <script src="build/js/bundle.min.js"></script>
+    
+</body>
+</html>

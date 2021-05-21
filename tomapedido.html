@@ -7,36 +7,58 @@
     <title>Toma Pedido</title>
     <link rel="stylesheet" href="build/css/app.css">
 </head>
-<body class="fondo-azul">
+<body class="fondo-azul fijar-body " >
+
+  <header class="header">
+    <div class="contenido-header">
+      <nav class="navegacion">
+        <a href="../">
+          <div class="bg-img">
+            <img   src="build/img/volver.svg" alt="">
+              
+          </div>
+        </a>
+        <a class="navegadores" href="menu.html">Menu</a>
+      </nav>
+      <div class="logout">
+        <a href=""><p>Logout</p></a>
+      </div>
+    </div>
+  </header>
 
   <div class="contenedor cont-listado">
 
-    <div class="buscar-cliente">
-      <!-- Agregar overflow a buscar cliente -->
-    </div>
+    
 
     <div class="contenedor__datos-informacion">
-      <div class="datos-cliente">
-
-        <div class="dato-cliente">
-          <label for="">Documento:</label>
-          <input type="text" readonly="readonly" value="Nombre cliente">
+      <div>
+        <h3>Inf. Clients</h3>
+        <div class="datos-cliente">
+  
+          <div class="dato-cliente">
+            <label for="">ID Card:</label>
+            <input type="text" readonly="readonly" value="Nombre cliente">
+          </div>
+  
+          <div class="dato-cliente">
+            <label for="">Nombre:</label>
+            <input type="text" readonly="readonly" value="Nombre cliente">
+          </div>
+  
+          <div class="dato-cliente">
+            <label for="">Direccion:</label>
+            <input type="text" readonly="readonly" value="Nombre cliente">
+          </div>
+  
+          <div class="dato-cliente">
+            <label for="">Telefono:</label>
+            <input type="text" readonly="readonly" value="Nombre cliente">
+          </div>
+  
         </div>
+      </div>
 
-        <div class="dato-cliente">
-          <label for="">Nombre:</label>
-          <input type="text" readonly="readonly" value="Nombre cliente">
-        </div>
-
-        <div class="dato-cliente">
-          <label for="">Direccion:</label>
-          <input type="text" readonly="readonly" value="Nombre cliente">
-        </div>
-
-        <div class="dato-cliente">
-          <label for="">Telefono:</label>
-          <input type="text" readonly="readonly" value="Nombre cliente">
-        </div>
+      <div class="datos-vendedor">
 
       </div>
     </div>
@@ -102,6 +124,24 @@
     </div>
   </div>
 
+
+  <div class="overflow">
+    <div class="contenedor">
+      <!-- Agregar overflow a buscar cliente -->
+      <h3>Search Client</h3>
+      <div class="search-options">
+        <input type="text" value="Document Number...">
+        <button class="search">Search</button>
+      </div>
+      <div class="result">
+        <input type="text" value="Here gonna the client's name" readonly>
+        <button class="ok"  value="">OK</button>
+      </div>
+      <a href="#"> <p>Create New client</p> </a>
+    </div>
+  </div>
+
+  <script src="build/js/bundle.min.js"></script>
     
 </body>
 </html>

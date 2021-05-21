@@ -9,6 +9,23 @@
 </head>
 <body class="fondo-azul">
 
+  <header class="header">
+    <div class="contenido-header">
+      <nav class="navegacion">
+        <a href="../">
+          <div class="bg-img">
+            <img   src="build/img/volver.svg" alt="">
+              
+          </div>
+        </a>
+        <a class="navegadores" href="menu.html">Menu</a>
+      </nav>
+      <div class="logout">
+        <a href=""><p>Logout</p></a>
+      </div>
+    </div>
+  </header>
+
   <div class="contenedor cont-listado">
 
     <div class="contenedor-table">
@@ -30,12 +47,13 @@
           <th class="tit-cliente" >Client</th>
           <th class="tit-cliente" >Total</th>
           <th class="tit-cliente" > <select class="select-status" name="" id="">
-              <option value="Status" disabled selected >Status</option>
-              <option value="No Finished">No Finished</option>
-              <option value="Enlistment">Enlistment</option>
-              <option value="Finished">Finished</option>
-              <option value="All">All</option>
-          </select> </th>
+                                      <option value="Status" disabled selected >Status</option>
+                                      <option value="No Finished">No Finished</option>
+                                      <option value="Enlistment">Enlistment</option>
+                                      <option value="Finished">Finished</option>
+                                      <option value="All">All</option>
+                                  </select>
+          </th>
 
         </tr>
         <tr>
@@ -95,6 +113,7 @@
 
   </div>
 
+  <script src="build/js/bundle.min.js"></script>
     
 </body>
 </html>

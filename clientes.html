@@ -9,6 +9,23 @@
 </head>
 <body class="fondo-azul">
 
+  <header class="header">
+    <div class="contenido-header">
+      <nav class="navegacion">
+        <a href="../">
+          <div class="bg-img">
+            <img   src="build/img/volver.svg" alt="">
+              
+          </div>
+        </a>
+        <a class="navegadores" href="menu.html">Menu</a>
+      </nav>
+      <div class="logout">
+        <a href=""><p>Logout</p></a>
+      </div>
+    </div>
+  </header>
+
   <div class="contenedor cont-listado">
 
     <div class="contenedor-table">
@@ -21,16 +38,14 @@
           </div>
         </div>
 
-        <a href="#">
-          <img src="build/img/add.svg" alt="">
-        </a>
+        <img class="add-section" src="build/img/add.svg" alt="">
 
       </div>
 
       
       <table class="table">
         <tr class="table-header">
-          <th class="tit-cliente number">Document</th>
+          <th class="tit-cliente number">ID Document</th>
           <th class="tit-cliente name" >Name</th>
           <th class="tit-cliente name" >Last name</th>
           <th class="tit-cliente number" >Phone</th>
@@ -124,6 +139,60 @@
 
   </div>
 
+
+  <div class="overflow overflow-noshow">
+    <div class="contenedor contenedor-create-clientes">
+    
+      <h3 class="prueba">Client Data</h3>
+
+      <div class="client-data">
+
+        <form action="">
+
+          <div class="centrado">
+            <label for="idd">ID Document:</label>
+            <input id="idd" type="number">
+          </div>
+
+          <div class="centrado">
+            <label for="name">Name:</label>
+            <input id="name" type="text">
+          </div>
+
+          <div class="centrado">
+            <label for="lname">Last Name:</label>
+            <input id="lname" type="text">
+          </div>
+
+          <div class="centrado">
+            <label for="phone">Phone:</label>
+            <input id="phone" type="number">
+          </div>
+
+          <div class="centrado">
+            <label for="email">E-mail:</label>
+            <input id="email" type="text">
+          </div>
+
+          <div class="centrado">
+            <label for="adress">Adress:</label>
+            <input id="adress" type="text">
+          </div>
+
+        </form>
+
+      </div>
+      
+      <div class="contenedor-create">
+        <button class="ok" value="Create">Create</button>
+        <!--Cambiar la funcionalidad del boton con js-->
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="build/js/bundle.min.js"></script>
     
 </body>
 </html>
